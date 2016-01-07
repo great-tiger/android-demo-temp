@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">android_international_lan</string>
+    <string name="action_settings">Settings</string>
+    
+ 	<string name="title">我的应用</string>
+    <string name="hello_world">世界你好!</string>
+</resources>
