@@ -1,0 +1,18 @@
+package com.example.android_broadcast_ordered;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+
+public class One extends BroadcastReceiver {
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		String value=intent.getStringExtra("name");
+		System.out.println("--One-->>"+value);
+		setResultData("我是One的处理结果");
+		//测试终止广播
+		//abortBroadcast();
+	}
+
+}

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android_menu.MainActivity" >
+
+    <item
+        android:id="@+id/sys"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/sys"/>
+
+     <item
+        android:id="@+id/user"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/user"/>
+     
+      <item
+        android:id="@+id/product"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/product"/>
+</menu>
