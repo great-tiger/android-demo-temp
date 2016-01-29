@@ -19130,3 +19130,92 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-01-29 16:11:57.470
+!MESSAGE Failed to load properties file for project 'android_controls_datePicker'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:25.580
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:25.581
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:25.581
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:25.582
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:32.039
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:32.039
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:32.040
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:19:32.040
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.000
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.001
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.001
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.001
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.247
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.247
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.247
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 16:20:01.247
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:10:29.930
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:10:29.931
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:10:29.931
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:10:29.932
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2016-01-29 17:11:09.387
+!MESSAGE Full project indexing required:
+  [+] D:\android-sdks\platforms\android-17\android.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:172)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:128)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:16:30.106
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:16:30.107
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:16:30.111
+!MESSAGE activity_main.xml: Couldn't find theme resource ?attr/colorAccent for the current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-01-29 17:16:30.112
+!MESSAGE activity_main.xml: Failed to find '?attr/colorAccent' in current theme.
