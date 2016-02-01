@@ -1,9 +1,0 @@
-package com.example.android_videoview_service;
-
-public class SDCardTools {
-	public static boolean saveFile(String fileName,byte[] data){
-		boolean flag=false;
-		if()
-		return flag;
-	}
-}
