@@ -1,0 +1,94 @@
+package com.example.android_controls_datetimedialog;
+
+import java.util.Calendar;
+
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.app.PendingIntent.CanceledException;
+import android.app.TimePickerDialog;
+import android.app.TimePickerDialog.OnTimeSetListener;
+import android.os.Bundle;
+import android.util.Printer;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TimePicker;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	private Button btn1;
+	private Button btn2;
+	private EditText editText;
+	private DatePickerDialog datePickerDialog;
+	private TimePickerDialog timePickerDialog;
+	private int year, monthOfYear, dayOfMonth,hourOfDay, minute;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		btn1=(Button)this.findViewById(R.id.button1);
+		btn2=(Button)this.findViewById(R.id.button2);
+		editText=(EditText)this.findViewById(R.id.editText1);
+		Calendar calendar=Calendar.getInstance();
+	    year=calendar.get(Calendar.YEAR);
+	    monthOfYear=calendar.get(Calendar.MONTH);
+	    dayOfMonth=calendar.get(Calendar.DAY_OF_MONTH);
+	    hourOfDay=calendar.get(Calendar.HOUR_OF_DAY);
+	    minute=calendar.get(Calendar.MINUTE);
+		datePickerDialog=new DatePickerDialog(this,new OnDateSetListener() {
+			@Override
+			public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+				String text=year+"-"+(monthOfYear+1)+"-"+dayOfMonth;
+				editText.setText(text);
+			}
+		}, year, monthOfYear, dayOfMonth);
+		//日期对话框
+		btn1.setOnClickListener(new OnClickListener() {		
+			@Override
+			public void onClick(View v) {
+				datePickerDialog.show();
+			}
+		});
+		
+		
+		timePickerDialog=new TimePickerDialog(this, new OnTimeSetListener() {
+			
+			@Override
+			public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+				Toast.makeText(getApplicationContext(),"选择的时间-->"+hourOfDay+":"+minute, Toast.LENGTH_SHORT).show();
+			}
+		}, hourOfDay, minute, true);
+		//时间对话框
+		btn2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				timePickerDialog.show();
+			}
+		});
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}
