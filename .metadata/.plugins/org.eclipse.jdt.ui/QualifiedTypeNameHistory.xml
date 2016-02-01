@@ -46,8 +46,6 @@
 <fullyQualifiedTypeName name="android.widget.DatePicker"/>
 <fullyQualifiedTypeName name="com.example.android_controls_datepicker.R.id"/>
 <fullyQualifiedTypeName name="android.widget.DatePicker.OnDateChangedListener"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.widget.TimePicker"/>
 <fullyQualifiedTypeName name="android.widget.AnalogClock"/>
 <fullyQualifiedTypeName name="com.example.android_controls_timepicker.R.id"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemSelectedListener"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
 </qualifiedTypeNameHistroy>
