@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;sample_0.jpg&apos; to &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original project: &apos;android_controls_gridview&apos;&#x0D;&#x0A;- Destination element: &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original element: &apos;sample_0.jpg&apos;" description="Copy file" element1="res/drawable-hdpi/sample_0.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1454405407260" target="/android_controls_scrollView/res/drawable-hdpi" units="0" version="1.0"/>
+</session>
