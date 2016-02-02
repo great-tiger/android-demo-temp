@@ -1,0 +1,93 @@
+package com.example.android_controls_listview3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+
+	private ListView listview;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		listview=(ListView)this.findViewById(R.id.listView1);
+		
+	}
+
+	private List<Map<String, String>> getDataSource(){
+		List<Map<String, String>> list=new ArrayList<Map<String,String>>();
+		for(int i=0;i<8;i++){
+			Map<String, String> map=new HashMap<String, String>();
+			map.put("index",String.valueOf(i));
+			map.put("image", "sample_"+i);
+			list.add(map);
+		}				
+		return list;
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	class MyAdapter extends BaseAdapter {
+
+		List<Map<String, String>> list;
+		
+		public MyAdapter(List<Map<String, String>> list) {
+			this.list=list;
+		}
+		
+		@Override
+		public int getCount() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+	
+}
