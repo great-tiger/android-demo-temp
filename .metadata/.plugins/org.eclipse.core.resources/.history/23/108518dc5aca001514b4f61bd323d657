@@ -1,0 +1,52 @@
+package com.example.android_storage_sharepreference;
+
+import android.os.Bundle;
+import android.preference.CheckBoxPreference;
+import android.preference.EditTextPreference;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceScreen;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+public class MainActivity extends PreferenceActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.xml.settings);
+	}
+
+	@Override
+	public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+		Toast.makeText(MainActivity.this, "¸´Ñ¡¿ò0000"+preference.getKey(), 1).show();
+
+		if(preference.getKey().equals("saveName"){
+			Toast.makeText(MainActivity.this, "¸´Ñ¡¿ò", 1).show();
+		  CheckBoxPreference checkBoxPreference=(CheckBoxPreference)findPreference("saveName");
+		  EditTextPreference editTextPreference=(EditTextPreference)findPreference("name");
+		  editTextPreference.setEnabled(checkBoxPreference.isChecked());
+		}
+		return super.onPreferenceTreeClick(preferenceScreen, preference);
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

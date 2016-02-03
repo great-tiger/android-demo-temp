@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 设置分类 key非常重要 -->
+    <PreferenceCategory android:key="myFirstCategory" android:summary="第一个类别summary" android:title="第一个类别">
+        <CheckBoxPreference android:key="wifi" android:title="使用无线网络" android:summary="是否使用无线网路"/>
+        <ListPreference 
+            android:key="myCity"
+            android:summary="所属城市"
+            android:title="所属城市"
+            android:entries="@array/citys"
+            android:entryValues="@array/citys" />
+    </PreferenceCategory>
+    <!-- 个人信息设置 -->
+     <PreferenceCategory android:key="myInfo" android:summary="个人信息设置" android:title="个人信息设置">
+        <CheckBoxPreference android:key="saveName" android:title="是否保存姓名" android:summary="是否保存姓名"/>
+       
+    </PreferenceCategory>
+</PreferenceScreen>
