@@ -42,8 +42,6 @@ public class MainActivity extends Activity {
 				System.out.println("---------onScrollStateChanged");
 				if(is_down&&scrollState==OnScrollListener.SCROLL_STATE_IDLE){
 					is_scroll_view=true;
-				}else{
-					is_scroll_view=false;
 				}
 			}
 			
