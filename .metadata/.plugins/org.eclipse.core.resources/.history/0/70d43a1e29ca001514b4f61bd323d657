@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		public int getGroupCount() {
-			// ×é´óÐ¡
+			// TODO Auto-generated method stub
 			return group.size();
 		}
 
