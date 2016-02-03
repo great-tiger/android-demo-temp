@@ -1,0 +1,19 @@
+package com.example.android_storage_sharedpreference;
+
+import java.net.ServerSocket;
+
+import com.example.android_storage_sharedpreference.sharedPreference.LoginService;
+
+import android.test.AndroidTestCase;
+import android.util.Log;
+
+public class MyTest extends AndroidTestCase {
+	public MyTest(){
+		
+	}
+	
+	public void Save(){
+		LoginService service=new LoginService(getContext());
+		boolean flag=service.saveLoginMsg("admin", "password");
+	}
+}

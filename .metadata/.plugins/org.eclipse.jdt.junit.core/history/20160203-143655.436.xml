@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyTest.Save (1)" project="android_storage_sharedpreference" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="android4.2.2 [emulator-5554]" time="0.14">
+    <testsuite name="com.example.android_storage_sharedpreference.MyTest" time="0.14">
+      <testcase name="Save " classname="com.example.android_storage_sharedpreference.MyTest" time="0.14"/>
+    </testsuite>
+  </testsuite>
+</testrun>

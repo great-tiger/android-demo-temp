@@ -1,0 +1,18 @@
+package com.example.android_storage_sharedpreference.sharedPreference;
+
+import android.content.Context;
+
+public class LoginService {
+	private Context context;
+	public LoginService(Context context){
+		this.context=context;
+	}
+	
+	public boolean saveLoginMsg(String name,String password){
+		boolean flag=false;
+		//不要加后缀名，系统以xml结尾命名文件。
+		//Context.MODE_PRIVATE 只有当前Activity可以访问
+		context.getSharedPreferences("login", Context.MODE_PRIVATE);
+		return flag;
+	}
+}

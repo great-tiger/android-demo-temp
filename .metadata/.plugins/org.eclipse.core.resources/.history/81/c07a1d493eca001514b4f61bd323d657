@@ -1,0 +1,14 @@
+package com.example.android_storage_sharedpreference.sharedPreference;
+
+import android.content.Context;
+
+public class LoginService {
+	private Context context;
+	public LoginService(Context context){
+		this.context=context;
+	}
+	
+	public boolean saveLoginMsg(){
+		
+	}
+}

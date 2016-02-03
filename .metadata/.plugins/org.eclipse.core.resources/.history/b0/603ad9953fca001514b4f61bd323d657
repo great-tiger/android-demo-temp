@@ -1,0 +1,9 @@
+package com.example.android_storage_sharedpreference;
+
+import android.test.AndroidTestCase;
+
+public class MyTest extends AndroidTestCase {
+	public MyTest(){
+		
+	}
+}
