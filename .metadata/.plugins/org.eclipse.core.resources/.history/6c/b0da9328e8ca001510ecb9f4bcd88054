@@ -1,0 +1,12 @@
+package com.example.android_storage_internalstorage.file;
+
+public class FileService {
+
+	public FileService() {
+	}
+	
+	public boolean saveContentToFile(){
+		
+		return false;
+	}
+}

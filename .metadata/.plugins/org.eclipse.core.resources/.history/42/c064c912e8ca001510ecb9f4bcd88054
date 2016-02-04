@@ -1,0 +1,8 @@
+package com.example.android_storage_internalstorage.file;
+
+public class FileService {
+
+	public FileService() {
+	}
+
+}

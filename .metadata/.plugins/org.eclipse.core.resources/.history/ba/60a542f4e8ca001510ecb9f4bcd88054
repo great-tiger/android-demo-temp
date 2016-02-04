@@ -1,0 +1,41 @@
+package com.example.android_storage_internalstorage.file;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import android.content.Context;
+
+public class FileService {
+
+	private Context context;	
+	public FileService(Context context) {
+		this.context=context;
+	}
+	/**
+	 * 
+	 * @param fileName 这里不要写路径分割符
+	 * @param mode
+	 * @return
+	 */
+	public boolean saveContentToFile(String fileName,int mode){
+		boolean flag=false;
+		FileOutputStream fileOutputStream=null;
+		try {
+		   fileOutputStream=context.openFileOutput(fileName, mode);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally{
+			if(fileOutputStream!=null){
+				try {
+					fileOutputStream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		return flag;
+	}
+}

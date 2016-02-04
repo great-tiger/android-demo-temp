@@ -1,0 +1,9 @@
+package com.example.android_storage_internalstorage;
+
+public class MyTester {
+
+	public MyTester() {
+	}
+	
+	
+}

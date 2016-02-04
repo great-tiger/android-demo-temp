@@ -1,0 +1,18 @@
+package com.example.android_storage_internalstorage;
+
+import com.example.android_storage_internalstorage.file.FileService;
+
+import android.content.Context;
+import android.test.AndroidTestCase;
+
+public class MyTester extends AndroidTestCase {
+
+	private final String TAG="MyTester";
+	public MyTester() {
+	}
+	
+	public void Save(){
+		FileService service=new FileService(getContext());
+		boolean flag=service.saveContentToFile("aa.txt", Context.MODE_PRIVATE,"ÄãºÃÂð?".getBytes());
+	}
+}

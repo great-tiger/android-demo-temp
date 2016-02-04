@@ -1,0 +1,17 @@
+package com.example.android_storage_internalstorage.file;
+
+import android.content.Context;
+
+public class FileService {
+
+	private Context context;	
+	public FileService(Context context) {
+		this.context=context;
+	}
+	
+	public boolean saveContentToFile(){
+		boolean flag=false;
+		
+		return flag;
+	}
+}
