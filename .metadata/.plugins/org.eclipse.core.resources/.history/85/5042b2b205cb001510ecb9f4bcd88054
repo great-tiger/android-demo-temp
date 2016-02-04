@@ -1,0 +1,16 @@
+package com.example.android_storage_externalstorage.file;
+
+public class FileService {
+
+	public FileService() {
+		
+	}
+	
+	public boolean saveFileToSdcard(String fileName,byte[] data){
+		boolean flag=false;
+		//ÏÈÅÐ¶ÏsdcardµÄ×´Ì¬
+		
+		return flag;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.example.android_storage_externalstorage;
+
+import android.test.AndroidTestCase;
+
+public class MyTester extends AndroidTestCase {
+
+	public MyTester() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

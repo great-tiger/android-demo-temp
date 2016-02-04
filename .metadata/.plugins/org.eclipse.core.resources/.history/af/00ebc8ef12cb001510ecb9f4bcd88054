@@ -1,0 +1,37 @@
+package com.example.android_storage_externalstorage;
+
+import java.io.File;
+
+import com.example.android_storage_externalstorage.file.FileService;
+
+import android.content.Context;
+import android.os.Environment;
+import android.test.AndroidTestCase;
+import android.widget.AutoCompleteTextView.Validator;
+
+public class MyTester extends AndroidTestCase {
+
+	public MyTester() {
+	}
+
+	public void TestSaveFileToSdcard(){
+		FileService service=new FileService();
+		service.SaveFileToSdcard("aa.txt", "happy new year".getBytes());
+	}
+	
+	public void TestReadContentFromSdcard(){
+		FileService service=new FileService();
+		String ret=service.ReadContentFromSdcard("aa.txt");
+		System.out.println("---->>"+ret);
+	}
+	
+	public void test(){
+		Context context=getContext();
+		File str=context.getExternalCacheDir();
+		System.out.println("---->>"+str.getAbsolutePath());
+		System.out.println("---->>"+context.getExternalFilesDir(null).getAbsolutePath());
+		System.out.println("---->>"+context.getExternalFilesDir(Environment.DIRECTORY_MUSIC).getAbsolutePath());
+
+
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyTester.testListCacheFile" project="android_storage_internalStorage" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="android4.2.2 [emulator-5554]" time="0.224">
+    <testsuite name="com.example.android_storage_internalstorage.MyTester" time="0.224">
+      <testcase name="testListCacheFile " classname="com.example.android_storage_internalstorage.MyTester" time="0.224"/>
+    </testsuite>
+  </testsuite>
+</testrun>

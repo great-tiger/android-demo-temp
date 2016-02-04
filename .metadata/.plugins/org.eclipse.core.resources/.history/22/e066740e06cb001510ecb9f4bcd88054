@@ -1,0 +1,21 @@
+package com.example.android_storage_externalstorage.file;
+
+import android.os.Environment;
+
+public class FileService {
+
+	public FileService() {
+		
+	}
+	
+	public boolean saveFileToSdcard(String fileName,byte[] data){
+		boolean flag=false;
+		//先判断sdcard的状态
+		//MEDIA_MOUNTED 媒体已挂载，可以读写
+		//
+		String state=Environment.getExternalStorageState();
+		
+		return flag;
+	}
+
+}

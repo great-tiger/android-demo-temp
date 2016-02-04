@@ -1,0 +1,27 @@
+package com.example.android_storage_externalstorage;
+
+import com.example.android_storage_externalstorage.file.FileService;
+
+import android.os.Environment;
+import android.test.AndroidTestCase;
+
+public class MyTester extends AndroidTestCase {
+
+	public MyTester() {
+	}
+
+	public void TestSaveFileToSdcard(){
+		FileService service=new FileService();
+		service.SaveFileToSdcard("aa.txt", "happy new year".getBytes());
+	}
+	
+	public void TestReadContentFromSdcard(){
+		FileService service=new FileService();
+		String ret=service.ReadContentFromSdcard("aa.txt");
+		System.out.println("---->>"+ret);
+	}
+	
+	public void test(){
+
+	}
+}

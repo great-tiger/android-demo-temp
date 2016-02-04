@@ -1,0 +1,9 @@
+package com.example.android_storage_externalstorage.file;
+
+public class FileService {
+
+	public FileService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
