@@ -1,11 +1,13 @@
 package com.example.android_storage_internalstorage.file;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import android.R.bool;
 import android.content.Context;
 
 public class FileService {
@@ -66,4 +68,43 @@ public class FileService {
 		}
 		return result;
 	}
+	
+	public boolean saveCacheFile(String fileName,int mode,byte[] data){
+		boolean flag=false;
+		FileOutputStream fileOutputStream=null;
+		//获取Cache文件默认路径
+		File file=context.getCacheDir();
+		try {
+		   //创建子文件夹
+		   File folder=new File(file.getAbsoluteFile()+"/subFolder");
+		   if(!folder.exists()){
+			   folder.mkdir();
+		   }
+		   fileOutputStream=new FileOutputStream(folder+"/"+fileName);
+		   fileOutputStream.write(data,0,data.length);
+		   flag=true;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally{
+			if(fileOutputStream!=null){
+				try {
+					fileOutputStream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		return flag;
+	}
+	
+	public void ListFiles(){
+		String[] strings=context.fileList();
+		for(String string:strings){
+			System.out.println("--->>"+string);
+		}
+	}
+	
 }

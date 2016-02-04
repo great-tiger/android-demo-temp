@@ -27,4 +27,14 @@ public class MyTester extends AndroidTestCase {
 		String msg=service.readContentFromFile("login.txt");
 		Log.i(TAG, msg);
 	}
+	
+	public void test(){
+		FileService service=new FileService(getContext());
+		service.saveCacheFile("cache.txt",Context.MODE_PRIVATE,"cache test".getBytes());
+	}
+	
+	public void testListCacheFile(){
+		FileService service=new FileService(getContext());
+		service.ListFiles();
+	}
 }
