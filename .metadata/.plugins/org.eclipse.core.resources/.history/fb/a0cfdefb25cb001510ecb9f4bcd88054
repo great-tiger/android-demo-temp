@@ -1,0 +1,32 @@
+package com.example.android_storage_sqllite.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DBManger extends SQLiteOpenHelper {
+
+	//数据库的名字
+	private static final String db_name="mydb.db";
+	//数据库的版本
+	private static final int VERSION=1;
+	
+	
+	public DBManger(Context context) {
+		super(context,db_name,null,VERSION);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		//在这里创建数据库
+		//数据类型 varchar int long float boolean text blob clob 
+		String sql=" create table person(pid integer primary key autoincrement,name varchar(64),address varchar(64) )";
+		db.execSQL(sql);
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+
+}

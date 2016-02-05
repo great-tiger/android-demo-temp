@@ -1,0 +1,16 @@
+package com.example.android_storage_sqllite;
+
+import com.example.android_storage_sqllite.db.DBHelper;
+
+import android.test.AndroidTestCase;
+
+public class MyTest extends AndroidTestCase {
+
+	public MyTest() {
+	}
+	
+	public void initTable() {
+		DBHelper dbManger=new DBHelper(getContext());
+		dbManger.getReadableDatabase();
+	}
+}

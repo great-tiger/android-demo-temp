@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyTest.insert" project="android_storage_sqlLite" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="android4.2.2 [emulator-5554]" time="0.204">
+    <testsuite name="com.example.android_storage_sqllite.MyTest" time="0.204">
+      <testcase name="insert " classname="com.example.android_storage_sqllite.MyTest" time="0.204"/>
+    </testsuite>
+  </testsuite>
+</testrun>

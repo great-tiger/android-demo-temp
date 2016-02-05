@@ -1,0 +1,10 @@
+package com.example.android_storage_sqllite.db;
+
+import android.content.Context;
+
+public class DBManager {
+	private DBHelper helper;
+	public DBManager(Context context) {
+		helper=new DBHelper(context);
+	}
+}

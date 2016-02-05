@@ -6,4 +6,7 @@
 <typeInfo handle="=fragment/D:\/android-sdks\/platforms\/android-17\/android.jar&lt;android.app(Fragment.class[Fragment" modifiers="33" timestamp="1443074155019"/>
 <typeInfo handle="=andriod_fragment_fragmentpageradapter/libs\/support-v4-18.0.0.jar&lt;android.support.v4.app(Fragment.class[Fragment" modifiers="33" timestamp="1448533426554"/>
 <typeInfo handle="=android_broadcast_send/D:\/android-sdks\/platforms\/android-17\/android.jar&lt;android.content(BroadcastReceiver.class[BroadcastReceiver" modifiers="1057" timestamp="1443074155019"/>
+<typeInfo handle="=android_storage_internalStorage/D:\/android-sdks\/platforms\/android-17\/android.jar&lt;android.test(InstrumentationTestRunner.class[InstrumentationTestRunner" modifiers="33" timestamp="1443074155019"/>
+<typeInfo handle="=android_storage_sqlLite/D:\/android-sdks\/platforms\/android-17\/android.jar&lt;android.database.sqlite(SQLiteDatabase.class[SQLiteDatabase" modifiers="49" timestamp="1443074155019"/>
+<typeInfo handle="=android_storage_externalStorage/D:\/android-sdks\/platforms\/android-17\/android.jar&lt;android.test(AndroidTestCase.class[AndroidTestCase" modifiers="33" timestamp="1443074155019"/>
 </typeInfoHistroy>

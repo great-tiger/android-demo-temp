@@ -1,0 +1,25 @@
+package com.example.android_storage_sqllite.db;
+
+import android.content.Context;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+public class DBManager {
+	private DBHelper helper;
+	public DBManager(Context context) {
+		helper=new DBHelper(context);
+	}
+	
+	public boolean updateBySql(String sql,Object[] bindArgs){
+		boolean flag=false;
+		try {
+			SQLiteDatabase db=helper.getWritableDatabase();
+			db.execSQL(sql,bindArgs);
+			db.close();
+			flag=true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
+}

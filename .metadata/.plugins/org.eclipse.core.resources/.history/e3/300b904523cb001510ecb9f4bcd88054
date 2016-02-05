@@ -1,0 +1,10 @@
+package com.example.android_storage_sqllite;
+
+import android.test.AndroidTestCase;
+
+public class MyTest extends AndroidTestCase {
+
+	public MyTest() {
+	}
+
+}
