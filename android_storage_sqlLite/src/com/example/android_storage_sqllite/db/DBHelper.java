@@ -32,4 +32,9 @@ public class DBHelper extends SQLiteOpenHelper {
 		db.execSQL(sql);
 	}
 
+	@Override
+	public void onOpen(SQLiteDatabase db) {
+		System.out.println("--onOpen-->>");
+		super.onOpen(db);
+	}
 }

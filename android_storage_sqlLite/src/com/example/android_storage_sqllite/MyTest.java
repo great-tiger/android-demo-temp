@@ -1,5 +1,7 @@
 package com.example.android_storage_sqllite;
 
+import java.util.Map;
+
 import com.example.android_storage_sqllite.db.DBHelper;
 import com.example.android_storage_sqllite.db.DBManager;
 
@@ -34,5 +36,16 @@ public class MyTest extends AndroidTestCase {
 		Object[] bindArgs={1};
 		DBManager manager=new DBManager(getContext());
 		manager.updateBySql(sql, bindArgs);
+	}
+	
+	public void query(){
+		String sql="select * from person where pid= 2";
+		DBManager dbManager=new DBManager(getContext());
+	    Map<String, String> map=dbManager.queryBySql(sql, null);
+	    
+	    System.out.println("-->>"+map.get("name"));
+	    System.out.println("-->>"+map.get("address"));
+	    System.out.println("-->>"+map.get("age"));
+	    
 	}
 }
