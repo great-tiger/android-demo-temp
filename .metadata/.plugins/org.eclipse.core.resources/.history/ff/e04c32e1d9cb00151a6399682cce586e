@@ -1,0 +1,10 @@
+package com.example.android_contentprovider_demo1;
+
+import android.test.AndroidTestCase;
+
+public class MyTest extends AndroidTestCase {
+
+	public MyTest() {
+	}
+
+}
